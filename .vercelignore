@@ -1,0 +1,14 @@
+.git
+.gitignore
+README.md
+QUICK_START.md
+SETUP_GUIDE.md
+N8N_INTEGRATION.md
+INDEX.md
+CHECKLIST.md
+FINAL_SETUP.md
+node_modules
+.next
+.env
+.env.local
+.env.*.local
