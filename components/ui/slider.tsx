@@ -13,11 +13,11 @@ export interface SliderProps
 const Slider = React.forwardRef<HTMLInputElement, SliderProps>(
   ({ className, min = 0, max = 100, step = 1, value, onChange, ...props }, ref) => {
     const [val, setVal] = React.useState<string | number>(
-      value !== undefined ? value : 50
+      typeof value === "string" || typeof value === "number" ? value : 50
     );
 
     React.useEffect(() => {
-      if (value !== undefined) {
+      if (typeof value === "string" || typeof value === "number") {
         setVal(value);
       }
     }, [value]);
